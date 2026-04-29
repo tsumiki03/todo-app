@@ -4,6 +4,7 @@ from .api import router
 
 # Create your tests here.
 
+
 class HealthCheckTest(TestCase):
     def setUp(self):
         self.ninja_client = TestClient(router)
