@@ -39,4 +39,4 @@ jobs:
         env:
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
           DEBUG: "False"
-        run: uv run python manage.py run test
+        run: uv run python manage.py test
