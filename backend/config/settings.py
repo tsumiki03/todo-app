@@ -15,8 +15,7 @@ import os
 from pathlib import Path
 
 env = environ.Env(
-    DEBUG=(bool, False),
-    CORS_ALLOWED_ORIGINS=(list, ["http://localhost:5173"])
+    DEBUG=(bool, False), CORS_ALLOWED_ORIGINS=(list, ["http://localhost:5173"])
 )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
