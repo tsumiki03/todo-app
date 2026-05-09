@@ -1,19 +1,10 @@
 name: Frontend CI
 
 on:
-  push:
-    branches: [ "main" ]
-    paths:
-      - "frontend/**"
-      - ".github/workflows/frontend_ci.yml"
-  pull_request:
-    branches: [ "main" ]
-    paths:
-      - "frontend/**"
-      - ".github/workflows/frontend_ci.yml"
+  workflow_call:
 
 jobs:
-  test-and-lint:
+  frontend-test-and-lint:
     runs-on: ubuntu-latest
 
     defaults:

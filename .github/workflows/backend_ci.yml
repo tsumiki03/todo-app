@@ -1,19 +1,10 @@
 name: Backend CI
 
 on:
-  push:
-    branches: [ "main" ]
-    paths:
-      - "backend/**"
-      - ".github/workflows/backend_ci.yml"
-  pull_request:
-    branches: [ "main" ]
-    paths:
-      - "backend/**"
-      - ".github/workflows/backend_ci.yml"
+  workflow_call:
 
 jobs:
-  test-and-lint:
+  test-and-lint-backend:
     runs-on: ubuntu-latest
 
     defaults:
