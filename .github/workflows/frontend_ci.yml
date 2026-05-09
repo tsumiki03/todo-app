@@ -4,7 +4,7 @@ on:
   workflow_call:
 
 jobs:
-  frontend-test-and-lint:
+  test-and-lint-frontend:
     runs-on: ubuntu-latest
 
     defaults:
